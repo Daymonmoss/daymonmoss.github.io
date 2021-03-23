@@ -1,0 +1,101 @@
+body{
+    margin: 0;
+    display: flex;
+    overflow-y: hidden;
+    position: absolute;
+    height: 100%;
+    width: calc(100% + 180px);
+    max-width: 8372px;
+    max-height: 4096px;
+    left: -180px;
+}
+a{
+    color: #fff;
+}
+header{
+    font-size: 12px;
+    display: block;
+    background: #003d74;
+    color: #fff;
+    width: 210px;
+}
+header.active{
+   left: 0;
+}
+h1{
+    font-size: 18px;
+    font-style: italic
+}
+h2{
+    font-size: 26px;
+}
+h3{
+    background:#002e58;
+}
+address{
+    font-style: normal;
+}
+header>ul{
+    font-size: 10px;
+}
+h1, h2, h3, address, header>ul {
+    padding: 0 20px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 210px);
+}
+
+main>p, main h4, main>section ul{
+    padding: 0 10px;
+}
+main h4, main hrб{
+   color: #003d74;
+}
+button{
+    position: relative;
+    top: 5px;
+    right: 5px;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 3px;
+    float: right;
+}
+button>svg{
+    fill: #003d74;
+}
+button:focus{
+    outline:none;
+}
+@media screen and (max-width: 700px) {
+    body, header{
+        display: block;
+        overflow-y: auto;
+    }
+    header{
+        width: 100%;
+    }
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+    main p{
+        margin: 10px;
+        padding-top: 0;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+
+}
+
+
