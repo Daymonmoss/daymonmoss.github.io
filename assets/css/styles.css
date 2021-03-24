@@ -149,6 +149,7 @@ li>a{
 @media screen and (max-width: 1000px) {
     body{
         display: block;
+        position: initial;
         left: initial!important;
     }
     header{
