@@ -1,10 +1,7 @@
 body{
     margin: 0;
     display: flex;
-    overflow-y: hidden;
     position: absolute;
-    height: 100%;
-    width: calc(100% + 180px);
     max-width: 8372px;
     max-height: 4096px;
     left: -180px;
@@ -45,15 +42,25 @@ main{
     display: flex;
     flex-direction: column;
     width: calc(100% - 210px);
+    background: #003d742e;
 }
-
+section{
+    background: #fff;
+    margin: 16px 0;
+}
+section>hr:first-child{
+    margin-top: 0;
+}
+section>hr:last-child{
+    margin-bottom: 0;
+}
 main>p, main h4, main>section ul{
     padding: 0 10px;
 }
-main h4, main hrб{
+main h4, main hб{
    color: #003d74;
 }
-button{
+#sidepanel{
     position: relative;
     top: 5px;
     right: 5px;
@@ -66,18 +73,88 @@ button{
     padding: 3px;
     float: right;
 }
-button>svg{
+#sidepanel>svg{
     fill: #003d74;
 }
 button:focus{
     outline:none;
 }
-@media screen and (max-width: 700px) {
-    body, header{
+#return{
+    position:fixed;
+    height: 54px;
+    width: 54px;
+    bottom: 63px;
+    right: 80px;
+    padding: 0;
+    cursor: pointer;
+    border-radius: 50%;
+    border-color: #003d742e;
+    background: #003d742e;
+}
+#return:hover{
+    background: #003d74!important;
+    transition: 0.5s;
+}
+#return:hover #up-arrow{
+    fill: #fff!important;
+    transition: 0.5s;
+}
+.row{
+    display: flex;
+}
+.highlight:hover{
+    background: #003d74;
+    color: #fff;
+}
+.w-100{
+    width: 100%;
+}
+.w-35{
+    width: 35%;
+}
+.w-50{
+    width: 50%;
+}
+.w-65{
+    width: 65%;
+}
+.w-50px{
+    width: 50px;
+}
+.w-80px{
+    width: 80px;
+}
+.w-120px{
+    width: 120px;
+}
+.w-200px{
+    width: 200px;
+}
+.container{
+    width: 80%;
+    margin:auto;
+}
+.w-50>div{
+    margin-bottom: 12px;
+}
+ul{
+    list-style-position: inside;
+}
+li{
+    padding-left: 20px;
+}
+li>a{
+    white-space: nowrap;
+}
+@media screen and (max-width: 1000px) {
+    body{
         display: block;
-        overflow-y: auto;
+        left: initial!important;
     }
     header{
+        padding: 20px 0;
+    }
+    header, main{
         width: 100%;
     }
     .sidebar {
@@ -90,6 +167,13 @@ button:focus{
     main p{
         margin: 10px;
         padding-top: 0;
+    }
+    #sidepanel{
+        display: none;
+    }
+    h2{
+        margin-top:0;
+        padding: 20px;
     }
 }
 
