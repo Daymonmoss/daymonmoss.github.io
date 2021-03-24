@@ -1,10 +1,15 @@
+@font-face {
+    font-family: Mass Effect;
+    src: url('../fonts/masseffect.ttf');
+}
 body{
     margin: 0;
     display: flex;
     position: absolute;
     max-width: 8372px;
     max-height: 4096px;
-    left: -180px;
+    left: -215px;
+    font-family: "Mass Effect";
 }
 a{
     color: #fff;
@@ -14,7 +19,7 @@ header{
     display: block;
     background: #003d74;
     color: #fff;
-    width: 210px;
+    width: 250px;
 }
 header.active{
    left: 0;
@@ -41,7 +46,7 @@ h1, h2, h3, address, header>ul {
 main{
     display: flex;
     flex-direction: column;
-    width: calc(100% - 210px);
+    width: calc(100% - 250px);
     background: #003d742e;
 }
 section{
@@ -64,8 +69,8 @@ main h4, main hб{
     position: relative;
     top: 5px;
     right: 5px;
-    height: 20px;
-    width: 20px;
+    height: 30px;
+    width: 30px;
     cursor: pointer;
     background-color: #fff;
     border: 1px solid #fff;
@@ -175,7 +180,7 @@ li>a{
     }
     h2{
         margin-top:0;
-        padding: 20px;
+        padding: 0 20px;
     }
     .w-50{
         width:100%;
@@ -183,9 +188,18 @@ li>a{
 }
 
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
+    header{
+        text-align: center;
+    }
+    header>ul{
+        list-style: none;
+    }
     .container{
         width: 100%;
+    }
+    section>h4, section>div{
+        padding: 0 20px;
     }
 }
 

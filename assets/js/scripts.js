@@ -40,11 +40,11 @@ $(document).ready(function () {
 
 
 $("#sidepanel").click(function () {
-    if ($("body").css("left") == "-180px") {
+    if ($("body").css("left") == "-215px") {
         $("body").css({left: "initial"});
         $("#sidepanel").css({transform: "rotate(180deg)"});
     } else {
-        $("body").css({left: "-180px"});
+        $("body").css({left: "-215px"});
         $("#sidepanel").css({transform: "initial"});
     }
 });
