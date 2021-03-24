@@ -38,8 +38,11 @@ $(document).ready(function () {
         head.insertBefore(script, head.firstChild);
     })();
 
-$("a").one("click", false);
-
+//$("a").one("click", false);
+$( "a" ).click(function(e) {
+        e.preventDefault();
+});
+ $( "a" ).dblclick();
 $("#sidepanel").click(function () {
     if ($("body").css("left") == "-215px") {
         $("body").css({left: "initial"});
