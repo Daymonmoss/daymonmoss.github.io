@@ -41,7 +41,7 @@ $(document).ready(function () {
     $('a').click(function() {
         return false;
     }).dblclick(function() {
-        window.location = this.href;
+        window.open(this.href, '_blank');
         return false;
     });
 
