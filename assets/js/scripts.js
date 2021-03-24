@@ -38,6 +38,7 @@ $(document).ready(function () {
         head.insertBefore(script, head.firstChild);
     })();
 
+$("a").one("click", false);
 
 $("#sidepanel").click(function () {
     if ($("body").css("left") == "-215px") {
