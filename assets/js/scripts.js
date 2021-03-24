@@ -38,11 +38,13 @@ $(document).ready(function () {
         head.insertBefore(script, head.firstChild);
     })();
 
-//$("a").one("click", false);
-$( "a" ).click(function(e) {
-        e.preventDefault();
-});
- $( "a" ).dblclick();
+    $('a').click(function() {
+        return false;
+    }).dblclick(function() {
+        window.location = this.href;
+        return false;
+    });
+
 $("#sidepanel").click(function () {
     if ($("body").css("left") == "-215px") {
         $("body").css({left: "initial"});
