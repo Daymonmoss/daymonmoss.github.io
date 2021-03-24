@@ -101,6 +101,7 @@ button:focus{
 }
 .row{
     display: flex;
+    flex-wrap: wrap;
 }
 .highlight:hover{
     background: #003d74;
@@ -175,6 +176,9 @@ li>a{
     h2{
         margin-top:0;
         padding: 20px;
+    }
+    .w-50{
+        width:100%;
     }
 }
 
