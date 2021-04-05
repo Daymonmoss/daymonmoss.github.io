@@ -165,6 +165,9 @@ li>a{
     header, main{
         width: 100%;
     }
+    #sidepanel{
+        display: none;
+    }
     .sidebar {
         width: 100%;
         height: auto;
