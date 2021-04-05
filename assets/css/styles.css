@@ -161,6 +161,7 @@ li>a{
     }
     header{
         padding: 20px 0;
+        height: 100vh;
     }
     header, main{
         width: 100%;
